@@ -16,7 +16,9 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'com.github.wnameless:workbook-accessor:1.5.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '5.2.2'
 }
 
 tasks.named('test') {

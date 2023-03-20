@@ -1,7 +1,7 @@
-package com.validador.validadorArchivo;
+package com.validador.validadorArchivo.ControllerFile;
+import com.validador.validadorArchivo.ServiceProcessor.ServicioProcesador;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 @RestController
 @RequestMapping("/api/v1")
 
@@ -13,17 +13,16 @@ public class ControlladorArchivo {
         //@services
     }
 
-    @GetMapping("/archivo")
-    public List<Archivo> obtenerArchivo(){
-        return this.servicioProcesador.obtenerArchivo();
-    }
-//    @PostMapping("/archivo/validar")
-//   public List<Persona>  procesar(@RequestBody Archivo archivo){
-//       return this.servicioProcesador.procesar(archivo);
-//   }
+//    @Autowired
+//    public void ControlladorArchivo(ServicioProcesador servicioProcesador){
+//        this.servicioProcesador = servicioProcesador;
+//    }
 
-   @PostMapping("/archivo/validar")
+
+
+
+  @PostMapping("/archivo/validar")
   public RespuestaArchivo procesar(@RequestBody Archivo archivo){
        return this.servicioProcesador.leer(archivo);
-  }
+ }
 }

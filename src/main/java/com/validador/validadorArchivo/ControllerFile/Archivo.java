@@ -1,4 +1,4 @@
-package com.validador.validadorArchivo;
+package com.validador.validadorArchivo.ControllerFile;
 
 public class Archivo {
     private String ruta;
@@ -13,7 +13,6 @@ public class Archivo {
         return ruta;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
+
+
 }

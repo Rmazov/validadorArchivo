@@ -1,4 +1,4 @@
-package com.validador.validadorArchivo;
+package com.validador.validadorArchivo.ControllerFile;
 
 public class RespuestaArchivo {
     private Integer lineasValidas;
