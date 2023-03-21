@@ -1,5 +1,6 @@
 package com.validador.validadorArchivo.ControllerFile;
 import com.validador.validadorArchivo.ServiceProcessor.ServicioProcesador;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -8,15 +9,12 @@ import org.springframework.web.bind.annotation.*;
 public class ControlladorArchivo {
     private ServicioProcesador servicioProcesador;
 
-    public ControlladorArchivo(){
-        this.servicioProcesador = new ServicioProcesador();
-        //@services
-    }
 
-//    @Autowired
-//    public void ControlladorArchivo(ServicioProcesador servicioProcesador){
-//        this.servicioProcesador = servicioProcesador;
-//    }
+
+    @Autowired
+    public void ControlladorArchivo(ServicioProcesador servicioProcesador){
+        this.servicioProcesador = servicioProcesador;
+    }
 
 
 

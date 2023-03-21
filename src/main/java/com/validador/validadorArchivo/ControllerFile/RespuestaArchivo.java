@@ -1,5 +1,8 @@
 package com.validador.validadorArchivo.ControllerFile;
 
+import org.springframework.stereotype.Service;
+
+
 public class RespuestaArchivo {
     private Integer lineasValidas;
     private Integer lineasInvalidas;
